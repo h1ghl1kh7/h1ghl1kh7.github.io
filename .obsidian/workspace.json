@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "940deae6a3acf1c9",
+  "active": "f05025addb21c44c",
   "lastOpenFiles": [
+    "_layouts/def_post.html",
+    "_layouts/default.html",
+    "_layouts/post.md",
     "assets/images/Pasted image 20240407164252.png",
     "assets/images/Pasted image 20240406194934.png",
     "assets/images/Pasted image 20240406194930.png",
