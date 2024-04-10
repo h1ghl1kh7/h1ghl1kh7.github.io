@@ -37,7 +37,7 @@ last_modified_date: 2024-04-04
 	- 선언문 외 나머지 코드 순차적 실행
 	-  Environment Record에 미리 기록된 정보 참조 or 업데이트
 - call stack에 쌓이며 전역 컨텍스트는 자동으로 먼저 생성되고, 함수 호출 시 함수 컨텍스트가 생성된다.
-	![[Pasted image 20240406194934.png]]
+	![](../../../assets/images/Pasted image 20240406194934.png)
 	이렇게 생성된다고 한다.
 	실제 사용되는 정보는 렉시컬 환경, 환경 레코드와 아우터이다.
 	- 렉시컬 환경 (어휘적 환경, Lexical Environment)
