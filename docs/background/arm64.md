@@ -139,7 +139,7 @@ mov 뒤의 bit shift 연산에는 lsl, ror 등이 존재한다.
 
 ### B | BL | BR | BLR
 
-- branch | jump
+- branch / jump
 
 `b <label>`
 
