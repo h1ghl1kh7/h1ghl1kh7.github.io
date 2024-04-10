@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Base
+title: l1m1m1m1m1t
 nav_order: 1
 description: "l1m1t's blog"
 permalink: /
