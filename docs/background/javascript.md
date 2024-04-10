@@ -1,5 +1,5 @@
 ---
-layout: def_post
+layout: default
 title: Customization
 nav_order: 1
 parent: Background

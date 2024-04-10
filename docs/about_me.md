@@ -1,5 +1,5 @@
 ---
-layout: def_post
+layout: default
 title: About
 nav_order: 2
 last_modified_date: 2024-04-10
