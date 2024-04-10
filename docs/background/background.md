@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: def_post
 title: Background
 nav_order: 3
 last_modified_date: 2024-04-10
