@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Customization
+title: Javascript
 nav_order: 1
 parent: Background
 last_modified_date: 2024-04-10
@@ -107,7 +107,7 @@ last_modified_date: 2024-04-10
 - 참조타입(객체 등) 데이터가 저장되며 구조적이지 않다.
 - 배열과 같은 참조 타입 데이터가 메모리 힙에 저장된다.
 - 메모리 힙의 주소값이 콜 스택에 저장된다.
-![[../images/Pasted image 20240407164252.png]]
+![](../../../images/Pasted image 20240407164252.png)
 - 배열의 값이 바뀌면 메모리 힙에 저장된 배열의 값이 바뀌는 것이다.
 - 
 ### Scope
