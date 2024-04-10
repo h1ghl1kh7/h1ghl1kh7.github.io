@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/background/javascript.md",
+                "file": "docs/about_me.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/background/javascript.md",
+                "file": "docs/about_me.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/background/javascript.md",
+                "file": "docs/about_me.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/background/javascript.md"
+                "file": "docs/about_me.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f05025addb21c44c",
+  "active": "940deae6a3acf1c9",
   "lastOpenFiles": [
+    "docs/background/javascript.md",
     "_layouts/def_post.html",
     "_layouts/default.html",
     "_layouts/post.md",
