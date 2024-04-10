@@ -3,7 +3,7 @@ layout: default
 title: Javascript
 nav_order: 1
 parent: Background
-last_modified_date: 2024-04-10
+last_modified_date: 2024-04-04
 ---
 
 # Javascript
@@ -16,12 +16,16 @@ last_modified_date: 2024-04-10
 {:toc}
 
 ## background
+
 ### 자바 스크립트 엔진
+
 자바스크립트 엔진은 코드를 실행하기 전에 Lexical Environment 내에 있는 메모리에 함수, 변수 선언을 추가한다.
 1. 함수와 변수 선언 스캔
 2. Lexical Environment라고 불리는 자바스크립트 데이터 구조 내 메모리에 추가
 3. 코드 실행
+
 ### 실행 컨텍스트 (Execution context)
+
 - 실행 코드에 제공할 정보들을 모아 놓은 객체
 - **생성 단계**
 	- 실행 컨텍스트 생성
@@ -54,7 +58,7 @@ last_modified_date: 2024-04-10
 			```
 			- 위와 같은  코드가 있을 때는, aa가 hoist되었기에, 출력의 결과는 undefined로 나온다.
 		- Outer Environment Reference : 실행 컨텍스트를 잇는 연결다리
-			- 스코프 체인 [[Nodejs VM#Scope]]
+			- 스코프 체인 [Scope](#scope)
 			- 바깥 Lexical Environment를 가리킨다.
 
 ```js
@@ -89,7 +93,6 @@ last_modified_date: 2024-04-10
 	- 외부 환경에 대한 참조 : 스코프 체인 결정
 
 ![](../../../assets/images/Pasted image 20240406175613.png)
-
 ### 콜스택
 - 실행 컨텍스트를 저장하는 자료구조
 - 원시 타입의 데이터 저장됨
@@ -107,9 +110,8 @@ last_modified_date: 2024-04-10
 - 참조타입(객체 등) 데이터가 저장되며 구조적이지 않다.
 - 배열과 같은 참조 타입 데이터가 메모리 힙에 저장된다.
 - 메모리 힙의 주소값이 콜 스택에 저장된다.
-![](../../../images/Pasted image 20240407164252.png)
+![](../../../assets/images/Pasted image 20240407164252.png)
 - 배열의 값이 바뀌면 메모리 힙에 저장된 배열의 값이 바뀌는 것이다.
-- 
 ### Scope
 scope라는 함수의 내부에서는 global variable의 값을 참조할 수 있다.
 - 함수 레벨 스코프
@@ -124,6 +126,7 @@ scope라는 함수의 내부에서는 global variable의 값을 참조할 수 �
 	- 위 현상을 변수 은닉화라고 한다.
 정적 / 렉시컬 스코프
 - 함수를 호출한 곳이 아닌 선언한 곳을 기준으로 스코프를 결정하는 원칙
+
 ```js
 let greet = 'Hello';
 
@@ -284,13 +287,17 @@ JS는 싱글 스레드 언어여서, 동기적 요청을 통해 코드를 하나
 	- 개체의 경우는 조금 다른데, 개체 자체는 업데이트 할 수 없지만, 개체의 속성은 업데이트 할 수 있다.
 	- 콜 스택 주소값의 변경을 허락하지 않는다는 뜻
 ### Reference
-https://velog.io/@y_jem/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8
-https://curryyou.tistory.com/276
+[https://velog.io/@y_jem/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8](https://velog.io/@y_jem/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8)
+<br>
+[https://curryyou.tistory.com/276](https://curryyou.tistory.com/276)
+<br>
 기타 블로그들..
+
 ## Node vm
 node:vm 모듈은 security mechanism이 아니라고 한다. -> untrusted code를 쓰지 말아라..
 주로 다른 context에서 코드를 실행하기 위해 사용한다고 한다.
 simple usage
+
 ```js
 const vm = require('vm')
 const context = { x : 2 }
@@ -320,6 +327,7 @@ VM 모듈은 새롭게 실행될 코드의 context를 original code와 분리한
 반? 격리된 context에서 실행된다고 봐도 될 것 같다.
 하지만, 쉽게 탈출된다.
 `this.constructor.constructor`이런 느낌으로 간단하다
+
 ```js
 > const vm = require("vm");
 
@@ -344,6 +352,7 @@ VM 모듈은 새롭게 실행될 코드의 context를 original code와 분리한
 [Function: anonymous]
 undefined
 ```
+
 - `this`는 context를 참조한다.
 - `this.constructor`는 context의 constructor를 참조한다. (native code를 참조한다. 아마 )
 - `this.constructor.constructor` 는 다른 native code function 이다.
