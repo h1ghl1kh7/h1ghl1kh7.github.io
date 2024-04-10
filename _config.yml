@@ -15,12 +15,42 @@
 # in the templates via {{ site.myvariable }}.
 title: l1m1t
 description: l1m1t's blog
-remote_theme: just-the-docs/just-the-docs
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://h1ghl1kh7.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://l1m1m1t.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: l1m1m1t/l1m1m1t.github.io # for github-metadata
 
 permalink: pretty
+
+exclude:
+ # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+ # specific to the theme website:
+   - bin/
+   - lib/
+   - "*.gemspec"
+   - "*.gem"
+   - LICENSE.txt
+   - package.json
+   - package-lock.json
+   - Rakefile
+   - README.md
+   - CODE_OF_CONDUCT.md
+   - docker-compose.yml
+   - Dockerfile
+ # theme test code
+   - fixtures/
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: "/assets/images/just-the-docs.png"
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -103,7 +133,7 @@ footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+last_edit_time_format: "%b %d, %Y"
 
 
 

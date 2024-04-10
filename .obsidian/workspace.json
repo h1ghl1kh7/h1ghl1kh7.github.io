@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "a38d869f8521145c",
+    "type": "split",
+    "children": [
+      {
+        "id": "0dc9894dd8f524ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f05025addb21c44c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/background/javascript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e3bf706e242a83f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7862d7cfeb525b27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "940deae6a3acf1c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8a48b0617ebceb12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "69536cdf28c6c5dd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7b2ce3c1e842bc48",
+    "type": "split",
+    "children": [
+      {
+        "id": "afcd495da5c3c0e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c2547f1b710bfc0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/background/javascript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1bce464dfb14ec78",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/background/javascript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1fb5f9cd7690d59a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ef9ca9c351e44d3d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/background/javascript.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "940deae6a3acf1c9",
+  "lastOpenFiles": [
+    "assets/images/Pasted image 20240407164252.png",
+    "assets/images/Pasted image 20240406194934.png",
+    "assets/images/Pasted image 20240406194930.png",
+    "assets/images/Pasted image 20240406175613.png",
+    "docs/background/background.md",
+    "docs/about_me.md",
+    "template/T1.md",
+    "README.md",
+    "index.md",
+    "template"
+  ]
+}

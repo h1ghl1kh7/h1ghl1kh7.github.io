@@ -1,0 +1,10 @@
+---
+layout: default
+title: Base
+nav_order: 1
+description: "l1m1t's blog"
+permalink: /
+---
+
+{: .highlight .fs-5}
+Once we accept our limits, we go beyond them.
