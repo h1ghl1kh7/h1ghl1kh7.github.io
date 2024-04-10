@@ -18,6 +18,7 @@ description: l1m1t's blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://l1m1m1t.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: l1m1m1t/l1m1m1t.github.io # for github-metadata
+remote-theme: just-the-docs/just-the-docs
 
 permalink: pretty
 
