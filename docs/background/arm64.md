@@ -31,6 +31,52 @@ last_modified_date: 2023-07-22
 
 32bit 연산이 가능한 ALU가 제공된다. 보통 다른 CPU에서는 shift 명령이 따로 존재하지만, ARM 에서는 명령어의 옵션으로 적용 시킬 수 있다.
 
+# Mitigation
+
+## MTE
+
+### Background
+
+Memory Tagging Extension
+for enhancing memory safety through architecture
+
+memory safety를 겨냥한 보호 기법들에는
+ASan, HWSAN 등 소프트웨어 기법들이 있다.
+다만, 성능과 배터리 측면에서 널리 배포해서 사용하기에는 무리가 있다.
+
+Armv8.5-A의 Memory Tagging Extension (MTE)는 이런 문제에 겨냥해서 나왔다.
+성능과 보안성 둘 다 어느정도 잡았다. (unsafe한 language에서도 어느정도 안전함)
+instrument 없이 Spatial, Temporal safety의 침해를 막았다.
+
+![Armv8.5-A Memory Tagging Extension diagram](https://community.arm.com/resized-image/__size/1400x0/__key/communityserver-blogs-components-weblogfiles/00-00-00-21-42/ARM965_5F00_MTE_5F00_WP_5F005F00_ST2_5F00_Diagram_5F00_1-_2800_002_2900_.png)
+
+- Buffer Overflow detection
+	- 메모리 할당 시에 포인터의 상위 비트에 태깅 정보를 설정하고 (파란색), 이 포인터를 통해 할당된 영역 범위 이상의 범위를 참조하게 되면 (노란색) 일종의 segmentation fault를 발생시킨다.
+- Use-After-Free detection
+	- 포인터 해제 시점에 메모리에 다른 태깅 정보 (혹은 태깅 초기화)를 설정하고, 해당 포인터를 통해 기존 메모리 영역에 접근하게 되면 (연두색) 마찬가지로 segmentation fault를 발생시킨다.
+이런 원리로 out-of-scope나 각종 boundary violation 탐지가 가능하다.
+하드웨어 Memory Controller를 통해서, 태깅 정보가 다른 경우에 `SIGSEGV`를 발생시켜서, 결과적으로는 `SEGV_MTESERR` (동기모드, 실시간 탐지), `SEGV_METAERR` (비동기모드) 에러를 발생시킴
+
+
+**MTE instruction**
+태그 생성하고 메모리와 포인터에 태깅하면 된다.
+- `IRG` : 랜덤 태그를 할당하는 명령어
+- `STG, STZG` : allocation tag를 메모리에 저장하는 명령어
+- `LDG` : 메모리에서 allocation tag를 로딩하고, address tag를 생성하는 명령어
+포인터와 메모리 접근 시마다 태깅 정보를 비교하는 것은 Memory controller를 통해 수정 가능하다고 한다.
+
+### Bypass
+
+1. Known-tag-bypasses
+	1. 일반적으로, mitigation으로써 memory-tagging의 효용성에서 중요한 부분은 tag values의 신뢰성이다.
+	2. tag 신뢰성의 위반은 공격자가 직접적/간접적으로 그들의 invalid memory access가 정상적으로 tagged 됐다고 하고 결과적으로 탐지되지 않는다.
+2. Unknown-tag-bypasses
+	1. 구현의 한계는 attacker가 탐지될 수 있는 잘못된 태그로 memory access를 시도하더라도 취약점을 exploit 할 가능성이 존재한다는 것이다. (다만 대부분의 unknown-tag-bypasses는 sync-MTE로 막힐 것 같긴하다.)
+
+
+# Reference
+[https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html](https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html)
+
 # 레지스터
 
 ## Xn ( 64bit )
