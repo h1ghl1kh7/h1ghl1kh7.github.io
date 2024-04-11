@@ -73,10 +73,6 @@ instrument 없이 Spatial, Temporal safety의 침해를 막았다.
 2. Unknown-tag-bypasses
 	1. 구현의 한계는 attacker가 탐지될 수 있는 잘못된 태그로 memory access를 시도하더라도 취약점을 exploit 할 가능성이 존재한다는 것이다. (다만 대부분의 unknown-tag-bypasses는 sync-MTE로 막힐 것 같긴하다.)
 
-
-# Reference
-[https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html](https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html)
-
 # 레지스터
 
 ## Xn ( 64bit )
@@ -294,3 +290,7 @@ adrp의 경우, adr과 수행하는 동작은 같지만, adrp는 4kb 정렬된 �
 ## ARITHMETIC
 
 ### add | sub | mul | div
+
+
+# Reference
+[https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html](https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-2-mitigation.html)
