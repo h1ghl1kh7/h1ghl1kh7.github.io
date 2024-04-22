@@ -146,7 +146,6 @@ callouts:
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 analytics:
   provider: "google-gtag"
-
   google:
     tracking_id: "G-P320TL4WXN"
     anonymize_ip: true
