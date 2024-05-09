@@ -9,7 +9,7 @@ last_modified_date: 2024-04-10
 
 {: .highlight}
 
-Make everything work seamless
+Make everything work seamlessly
 
 ## About Me
 
