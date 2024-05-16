@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: l1m1t
-description: l1m1t's blog
+title: h1ghl1kh7
+description: h1ghl1kh7's blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://l1m1m1t.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: l1m1m1t/l1m1m1t.github.io # for github-metadata
+url: "https://h1ghl1kh7.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: h1ghl1kh7/h1ghl1kh7.github.io # for github-metadata
 remote_theme: just-the-docs/just-the-docs
 
 permalink: pretty
@@ -77,8 +77,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "l1m1t on GitHub":
-    - "https://github.com/l1m1m1t/"
+  "h1ghl1kh7 on GitHub":
+    - "https://github.com/h1ghl1kh7/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -89,8 +89,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: l1m1t's Github
-    url: https://github.com/l1m1m1t/
+  - title: h1ghl1kh7's Github
+    url: https://github.com/h1ghl1kh7/
 
 liquid:
    error_mode: strict
@@ -114,7 +114,7 @@ last_edit_time_format: "%b %d, %Y"
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/l1m1m1t/l1m1m1t.github.io" # the github URL for your repo
+gh_edit_repository: "https://github.com/h1ghl1kh7/h1ghl1kh7.github.io" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
