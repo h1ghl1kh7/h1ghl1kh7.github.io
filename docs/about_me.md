@@ -11,16 +11,6 @@ last_modified_date: 2024-04-10
 
 Make everything work seamlessly
 
-## About Me
-
-Nick **l1m1t**
-<br>
-A.K.A. **h1ghl1kh7**, **go_1fy**, etc.
-<br>
-CTF Player, Vulnerability Researcher
-<br>
-Interested in Pwn, Rev, etc.
-
 ## Archieve
 
 ### 2023
@@ -55,10 +45,3 @@ Interested in Pwn, Rev, etc.
 
 - 28회 해킹 캠프 - 당신도 툴키디가 될 수 있다 (툴 소개 + Mac 취약점 분석 소개)
 - 제1회 CCA 화이트햇 겨울 세미나 for newbies “ROP 기법들 소개” 발표
-
-## Contract
-email : h1ghl1kh7@proton.me / kimhyilim.915@gmail.com
-<br>
-discord : h1ghl1kh7
-<br>
-github : [l1m1t](https://github.com/l1m1m1t)
