@@ -1,0 +1,16 @@
+# ignore everything in this directory
+
+.devcontainer/
+.git/
+.jekyll-cache/
+.vscode/
+.prettierignore
+404.html
+Gemfile
+Gemfile.lock
+LICENSE.txt
+Rakefile
+just-the-docs.gemspec
+package-lock.json
+package.json
+fixtures/
