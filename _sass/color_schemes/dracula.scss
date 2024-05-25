@@ -13,8 +13,10 @@ $feedback-color: darken($sidebar-color, 3%);
 $table-background-color: #3e3757;
 $search-background-color: $grey-dk-250;
 $search-result-preview-color: $grey-dk-000;
-$border-color: #000000;
+$border-color: #57448e;
 
-$body-font-family: "Pretendard";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+$body-font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$mono-font-family: "SF Mono", SFMono-Regular, ui-monospace, menlo, consolas, monospace !default;
 
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
