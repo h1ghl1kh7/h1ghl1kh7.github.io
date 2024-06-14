@@ -9,7 +9,6 @@ last_modified_date: 2024-04-05
 ---
 
 
-## Table of Contents
 {: .no_toc .text-delta}
 
 1. TOC

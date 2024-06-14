@@ -6,7 +6,6 @@ parent: Background
 last_modified_date: 2024-02-01
 ---
 
-## Table of Contents
 {: .no_toc  .text-delta }
 
 1. TOC

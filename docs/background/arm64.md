@@ -7,7 +7,6 @@ last_modified_date: 2023-07-22
 ---
 
 
-## Table of Contents
 {: .no_toc .text-delta}
 
 1. TOC

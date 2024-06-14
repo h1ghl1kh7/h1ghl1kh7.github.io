@@ -1,6 +1,6 @@
 ---
 layout: default
-title: h1ghl1kh7
+title: home
 nav_order: 1
 description: "h1ghl1kh7's blog"
 permalink: /
@@ -29,8 +29,8 @@ permalink: /
 <div class="profile-container">
     <img src="/assets/images/profile.png" class="profile-picture">
     <div class="profile-info">
-        <h1>h1ghl1kh7</h1>
-        <p>(㇏(•̀ᵥᵥ•́)ノ) (㇏(•̀ᵥᵥ•́)ノ)</p>
+        <h1># h1ghl1kh7</h1>
+        <p>(㇏(•̀ᵥᵥ•́)ノ) -- (㇏(•̀ᵥᵥ•́)ノ)</p>
     </div>
 </div>
 
