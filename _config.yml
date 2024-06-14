@@ -146,9 +146,10 @@ plugins:
   - jekyll-include-cache
 
 kramdown:
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: true
 
 compress_html:
   clippings: all
@@ -157,5 +158,5 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
-  # ignore:
-  #   envs: all
+  ignore:
+    envs: all
