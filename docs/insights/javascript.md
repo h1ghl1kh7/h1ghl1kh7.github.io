@@ -7,9 +7,9 @@ last_modified_date: 2024-04-04
 ---
 ---
 
-## background
+# background
 
-### 자바 스크립트 엔진
+## 자바 스크립트 엔진
 
 자바스크립트 엔진은 코드를 실행하기 전에 Lexical Environment 내에 있는 메모리에 함수, 변수 선언을 추가한다.
 1. 함수와 변수 선언 스캔
@@ -85,6 +85,7 @@ last_modified_date: 2024-04-04
 	- 외부 환경에 대한 참조 : 스코프 체인 결정
 
 ![](../../../assets/images/Pasted image 20240406175613.png)
+
 ### 콜스택
 - 실행 컨텍스트를 저장하는 자료구조
 - 원시 타입의 데이터 저장됨
@@ -98,12 +99,14 @@ last_modified_date: 2024-04-04
 - 만약 없으면, 메모리 공간을 새로 생성한 후, 그 주소가 변수의 주소로 할당될 수도 있다.
 - 아무 변수도 참조하고 있지 않은 원시타입이 존재할 경우, 가비지 컬렉터가 알아서 제거한다.
 - const 타입은 위와 같은 방식으로 동작이 불가능하다. (초기값 할당이 필수이기 때문)
+
 ### 메모리 힙
 - 참조타입(객체 등) 데이터가 저장되며 구조적이지 않다.
 - 배열과 같은 참조 타입 데이터가 메모리 힙에 저장된다.
 - 메모리 힙의 주소값이 콜 스택에 저장된다.
 ![](../../../assets/images/Pasted image 20240407164252.png)
 - 배열의 값이 바뀌면 메모리 힙에 저장된 배열의 값이 바뀌는 것이다.
+
 ### Scope
 scope라는 함수의 내부에서는 global variable의 값을 참조할 수 있다.
 - 함수 레벨 스코프
@@ -137,7 +140,7 @@ print(); // 예상: "Hello" | 출력값: "Hello"
 위 처럼, print 함수를 main / sayHi에서 각각 호출하고 있지만, 최종적인 결과값은 둘 다 전역 변수의 값으로 나온다.
 - module level scope
 	모듈 내부에서 정의한 변수나 함수는 다른 스크립트에서 접근할 수 없음
-### 함수
+## 함수
 > 바인딩 : 실별자와 값 연결
 > 변수 선언 -> 변수 이름 + 메모리 공간의 주소 바인딩 (할당은 아닌 듯 하다)
 > 객체 안에 선언된 함수 : 메소드 (전역에서 선언된 일반 함수도 결국 전역 객체의 메소드 -> 모든 함수는 객체 내부에 있음)
@@ -214,7 +217,7 @@ class Student extends Score {
 - named function (기명함수)
 	- 이름이 붙여진 함수
 	- 런타임 이전에 선언된다.
-### 클래스 / 객체 / 인스턴스
+## 클래스 / 객체 / 인스턴스
 - 클래스
 	- 설계도
 	- 어떠한 변수와 메소드를 가지는지 적어놓은 것
@@ -233,8 +236,8 @@ obj instance of Class
 // obj가 Class에 속하는지 아닌지 판단하는 연산자이다.
 ```
 이 연산자는 오른쪽 피연산자로 생성자 함수를 사용한다. 하지만, 사용자가 직접 정의한 생성자 함수와 내장 생성자 함수 둘다 오른쪽 피연산자가 될 수 있으므로, 구분하기 어려울 수 있다.
-### Promise
-### 모듈
+## Promise
+## 모듈
 파일이 여러개 분리되어 있을 때 분리된 파일 각각을 모듈이라고 부름
 자바스크립트 커뮤니티에서 특별한 라이브러리르 만들어 필요한 모듈을 언제든지 불러올 수 있게 해준다거나 코드를 모듈 단위로 구성해주는 방법을 만드는 등 다양한 시도름 함
 - AMD - 오래된 모듈 시스템 중 하나 / require.js라는 라이브러리를 통해 처음 개발됨
@@ -244,9 +247,12 @@ obj instance of Class
 `export`, `import`를 적용하면 다른 모듈을 불러와 불러온 모듈에 있는 함수를 호출하는 것과 같은 기능 공유를 할 수 있음
 - `export` 지시자 : 변수나 함수 앞에 붙이면 외부 모듈에서 해당 변수나 함수에 접근할 수 있다.
 - `import` 지시자 : 외부 모듈의 기능을 가져올 수 있다.
+
 항상 엄격 모드로 실행된다.
-모듈 레벨 스코프 [[Javascript#Scope]]
-### 비동기 처리
+
+모듈 레벨 스코프 [Scope](#scope)
+
+## 비동기 처리
 > Web API : 웹 브라우저에서 제공하는 API로 AJAX나 Timeout등의 비동기 작업을 실행
 > Task Queue : Callback Queue라고도 하며 Web API에서 넘겨받은 Callback함수를 저장(선입선출 방식)
 > Event Loop : Call Stack이 비어있다면 Task Queue의 작업을 Call Stack으로 옮김
@@ -261,10 +267,10 @@ JS는 싱글 스레드 언어여서, 동기적 요청을 통해 코드를 하나
 	- 타이머가 다 되면, 해당 API는 A함수의 콜백함수를 테스크 큐에 밀어넣는다.
 	- 테스크큐는 콜스택이 비어있는 것을 보고 테스크 큐에 콜백 함수를 콜스택에 전달한다.
 	- 콜스택은 함수를 실행한다.
-### 변수
+## 변수
 - var
 	- var 선언은 전역 범위 혹은 함수 범위로 지정됨
-	- 호이스팅 [[Javascript#실행 컨텍스트 (Execution context)]]
+	- 호이스팅 [실행 컨텍스트 (Execution context)](#실행%20컨텍스트%20(Execution%20context))
 - let
 	- 해당 블록 내에서만 사용이 가능하다. (중괄호)
 	- let은 업데이트 될 수 있다.
@@ -272,18 +278,47 @@ JS는 싱글 스레드 언어여서, 동기적 요청을 통해 코드를 하나
 	```js
 	let test=1;
 	let test=2; // Uncaught SyntaxError: Identifier 'test' has already been declared
-```
+    ```
 - const
 	- 선언된 블록 범위 내에서만 접근 가능함
 	- 업데이트, 재선언 둘 다 불가능하다.
 	- 개체의 경우는 조금 다른데, 개체 자체는 업데이트 할 수 없지만, 개체의 속성은 업데이트 할 수 있다.
 	- 콜 스택 주소값의 변경을 허락하지 않는다는 뜻
-### Reference
+
+## Prototype
+
+간단하게 설명하자면
+
+```javascript
+function Foo(x){
+	this.x = x;
+}
+var a = new Foo("test");
+
+a.__proto__ == Foo.prototype
+> True
+```
+
+이걸로 설명이 될 것 같다.
+
+prototype은 그냥 원본 그자체의 의미를 가지고 있고 `__proto__`는 상위 객체의 prototype property를 참조하고, 상위 객체는 prototype property를 가지고 있어서 다른 하위 객체가 참조하려고 할 때 자신의 복사본인 prototype을 준다.
+
+### Prototype Chaining
+
+객체가 자기 자신의 property 뿐만이 아니라, 자신의 부모 역할을 하는 prototype 객체의 property도 자신의 property처럼 사용할 수 있게 하는 것이다.
+
+특정 객체의 property에 접근하는 경우, 만약 자기 자신에게 해당 property가 존재하지 않는다면, prototype 링크로 연결된 prototype 객체에서 해당 property를 검색하게 된다.
+
+
+## Reference
+
 [https://velog.io/@y_jem/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8](https://velog.io/@y_jem/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8)
 <br>
 [https://curryyou.tistory.com/276](https://curryyou.tistory.com/276)
 <br>
 기타 블로그들..
+
+# tricks
 
 ## Node vm
 node:vm 모듈은 security mechanism이 아니라고 한다. -> untrusted code를 쓰지 말아라..
@@ -349,3 +384,22 @@ undefined
 - `this.constructor`는 context의 constructor를 참조한다. (native code를 참조한다. 아마 )
 - `this.constructor.constructor` 는 다른 native code function 이다.
 - `this.constructor.constructor()` anonymous wrapper를 가졌다.
+
+
+## 화살표 함수
+
+```javascript
+() => expression;
+(param1, paramN) => {
+    statements
+};
+```
+
+## Filtering
+
+```javascript
+`chi${""}ld_p${""}rocess`
+
+require("child_process").execSync("ls -al").toString();
+require("child_process")['exe'+'cSync']("ls -al").toString();
+```
