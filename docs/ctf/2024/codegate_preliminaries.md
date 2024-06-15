@@ -7,12 +7,6 @@ grand_parent: CTF
 has_children: false
 last_modified_date: 2024-06-14
 ---
-
-{: .no_toc .text-delta}
-
-1. TOC
-{:toc}
-
 --- 
 
 <br>

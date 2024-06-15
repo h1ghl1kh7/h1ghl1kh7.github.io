@@ -5,14 +5,7 @@ nav_order: 1
 parent: Background
 last_modified_date: 2024-04-04
 ---
-
-# Javascript
-{: .no_toc}
-
-{: .no_toc  .text-delta }
-
-1. TOC
-{:toc}
+---
 
 ## background
 

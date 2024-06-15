@@ -7,12 +7,7 @@ grand_parent: Background
 has_children: false
 last_modified_date: 2024-04-05
 ---
-
-
-{: .no_toc .text-delta}
-
-1. TOC
-{:toc}
+---
 
 ## Introduction
 **컴퓨터의 발전**

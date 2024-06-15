@@ -5,11 +5,7 @@ nav_order: 3
 parent: Background
 last_modified_date: 2024-02-01
 ---
-
-{: .no_toc  .text-delta }
-
-1. TOC
-{:toc}
+---
 
 
 ## 메타 문자
