@@ -1,11 +1,10 @@
 ---
 layout: default
-title: home
 nav_order: 1
 description: "h1ghl1kh7's blog"
 permalink: /
+toc : false
 ---
-
 
 
 <style>
@@ -29,7 +28,7 @@ permalink: /
 <div class="profile-container">
     <img src="/assets/images/profile.png" class="profile-picture">
     <div class="profile-info">
-        <h1># h1ghl1kh7</h1>
+        <h1>h1ghl1kh7</h1>
         <p>(㇏(•̀ᵥᵥ•́)ノ) -- (㇏(•̀ᵥᵥ•́)ノ)</p>
     </div>
 </div>
