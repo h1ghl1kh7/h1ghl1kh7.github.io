@@ -16,21 +16,21 @@ Make everything work seamlessly
 ### 2023
 
 - CODEGATE junior finalist
-- CCE2023 finalist
-- WACon finalist
-- Whitehat contest 3th (사이버작전사령관상)
+- Cyber Conflict Exercise finalist
+- WACON finalist
+- Whitehat contest 사이버작전사령관상
 - YISF 한국정보보호산업협회장상
 - KOSPO ctf 우수상
 - JBU ctf 우수상
 - The Hacking Championship Junior 우수상
-- ABB 해커톤 해킹 방어 부문 대상
+- ABB 보안 경진대회 대상
 
 ### 2022
 
-- wacon ctf finalist
-- yisf finalist
-- hack championship 장려상
-- jbu ctf 우수상
+- WACON finalist
+- YISF finalist
+- The Hacking Championship Junior 장려상
+- JBU ctf 우수상
 - 정보보안 경진대회 단체전 최우수상 (KERIS 원장상)
 - 서울여자대학교 정보보호 영재 교육원 고등전문 A 교육과정 최우수상
 - 한국디지털미디어고등학교 교내 프로그래밍 대회 금상 (Hack The Dimi)
