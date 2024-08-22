@@ -11,7 +11,12 @@ last_modified_date: 2024-04-10
 
 Make everything work seamlessly
 
-## Award
+## Achievements
+
+### 2024
+
+- DEFCON32 finalist (@FMC)
+- YISF 1st
 
 ### 2023
 
