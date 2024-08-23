@@ -2,7 +2,7 @@
 layout: default
 title: About
 nav_order: 2
-last_modified_date: 2024-04-10
+last_modified_date: 2024-07-23
 ---
 
 ## Vision
@@ -12,7 +12,6 @@ last_modified_date: 2024-04-10
 Make everything work seamlessly
 
 ## Achievements
-
 ### 2024
 
 - DEFCON32 finalist (@FMC)
