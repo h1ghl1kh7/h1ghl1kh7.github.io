@@ -36,9 +36,6 @@ toc : false
 
 ---
 
-<br>
-A.K.A. **l1m1t**, **go_1fy**, etc.
-<br>
 I'm CTF Player, Vulnerability Researcher
 <br>
 
