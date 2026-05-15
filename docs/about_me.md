@@ -16,6 +16,7 @@ last_modified_date: 2026-03-21
 - KAIST (Undergraduate) - 2025.02 ~
 - Best of the Best 12th (Completed) - 2023.07 ~ 2024.03
 - Korea Digital Media High School (Graduated) - 2022.03 ~ 2025.02
+- Institute of Information Security Education for the Gifted, SWU (Advanced Track A) - 2022.05 ~ 2022.11
 
 ### Vision
 
@@ -24,6 +25,11 @@ last_modified_date: 2026-03-21
 Make everything work seamlessly
 
 ## Awards
+
+### 2025
+
+- SAS CTF Finalist (@Odin)
+- Ai Cyber Defense Contest Finalist (@노루웨이 숯)
 
 ### 2024
 
